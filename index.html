@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+        margin: 0px;
+background-color: #2561c0;
+        }
+        h1{
+            color: rgb(244, 247, 244);
+           text-align: center;
+           padding-top: 7vw;
+           font-size: 4vw;
+        }
+        img{
+            width: 20vw;
+            height: 20vw;
+            margin-top: 2vw;
+            border-radius: 5vw;
+        }
+        .container{
+            display: flex;
+            align-self: center;
+            border: 0px;
+            justify-content: center;
+        }
+        
+        #off{
+            margin-right: 1vw;
+            text-align: center;
+            font-size:1.5vw;
+            
+            background-color: yellow;
+            align-self: center;
+        }
+        #on{
+            margin-left: 1vw;
+            margin-right: 1vw;
+            text-align: center;
+            font-size:1.5vw;
+            
+            background-color: rgb(224, 224, 84);
+            align-self: center;
+        }
+        button{
+            border: .2vw solid rgb(119, 87, 87);
+            padding: .4vw;
+            font-weight: bold;
+            color: rgb(35, 47, 43);
+            border-radius: 1vw;
+            color: rgb(100, 80, 80);
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Can You Turn On/Off the Light?</h1>
+    <div class="container">
+    <button onclick="document.getElementById('loff').src='lighton.jpeg' " id="off">Turn On Light</button>
+
+    <img src="lightoff.jpeg" alt="Light_Off" id="loff">
+    <button onclick="document.getElementById('loff').src='lightoff.jpeg' " id="on">Turn Off Light</button>
+    
+</div>
+</body>
+</html>
